@@ -1,0 +1,1 @@
+select count(distinct case when order_status = 'Refunded' then order_id  end)*100/count(distinct order_id) as Refund_Rate from zomato-502418.Dataset1.Order
